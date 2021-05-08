@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Gallery for Blaine DeYoung's personal web development portfolio site.">
+   <link rel="stylesheet" type="text/css" href="css/styles.css">
+   <link rel="icon" href="images/favicon.ico">
+   <title>Blaine DeYoung Portfolio Gallery</title>
+ </head>
+
+ <body>
+   <div class="container">
+     <div id="topbar">
+       <p>Welcome to Blaine DeYoung's personal webserver! What can I do for you today?</p>
+     </div>
+     <!-- this is the area where information will be displayed -->
+     <div id="viewer">
+       <div class="visible" id="mainMenu">
+         <button id="aboutButton">About</button>
+         <a href="./resume.pdf" target="_blank"><button id="resumeButton">Resume</button></a>
+         <button id="projectsButton">Projects</button>
+         <button id="linksButton">Links</button>
+       </div>
+       <div class="hidden" id="about">
+         <p>
+           My problem with establishing a career has always been I wasn't sure exactly
+           what I wanted to do. I've considered and made strong motions toward becoming
+           a biologist, a chemist, and a mathematician, with some shorter spasms toward
+           philosophy, law, literary scholarship, and business.
+         </p>
+         <p>
+           I was in college forever because it turns out that taking two classes from every
+           college in a university doesn't add up to a degree. When I was finally informed that
+           if I didn't graduate that year they were going to cut off my funding, I did an audit
+           of my credits and decided that the shortest path to a degree was English Literature.
+           English classes don't have the same linear progression that most majors do.
+           It doesn't really matter if you take Shakespeare before Romance Literature.
+           And that's how I came to have that Bachelor's Degree.
+           I was only one class short of a minor in chemistry, and I think three classes short of a minor in math.
+         </p>
+         <p>
+           After I got an English degree because of its expedience,
+           I briefly considered a career in literary scholarship. I have this theory about Milton's
+           Paradise Lost that is the kind of thing that becomes a basis for such a career, but I
+           wasn't really motivated to do that and it didn't seem like a very practical pursuit. So
+           I stayed in college and got a Master's in Computer Science which has been a consistent
+           interest of mine since childhood.
+         </p>
+         <p>
+           Looking at the available concentrations for Master's Computer Science programs, I immediately
+           gravitated toward Bioinformatics because biology has been one of the central pre-occupations of my life.
+           That means I spent, more or less,
+           half my time taking computer classes and half taking biology classes. But it turns out that really isn't a very good
+           way to study bioinformatics, and I had a hard time getting a job. The college really should develop a program
+           geared directly toward that specialization or quit saying they have such a program.
+         </p>
+         <p>
+           After college my father passed away and left me a small inheritance. A smarter person might have put that
+           money into a retirement account, but I decided to take some time off to think about what I was going to do.
+           I eventually decided web development was going to be my career path because I like it and there's plenty of
+           demand, but I'd barely stratched the surface of that in college. So I went to V School and learned MERN
+           stack development.
+         </p>
+         <p>
+           Quite to my surprise, the first job offer I got after V School was as a Bioinformatician working for the state.
+           So I decided to give that a go, but the lab really didn't need me. The researchers all knew how to do the computer
+           stuff they needed for their research, so after a six month contract they didn't offer me a permanent position. That
+           was just about the time Covid-19 wrecked the economy. I bet those biologists really wish I was still working with them!
+         </p>
+         <p>
+           Now I have the eternal problem of looking for the few years of job experience that virtually every job requires.
+           So now I'm building this portfolio site to showcase my skills and hopefully get a job.
+         </p>
+         <p>
+           I'm bright. I'm capable. I'm mature. And I have enough life experience to know that
+           anything I don't know I can learn at speed.
+         </p>
+         <p>
+           Thank you for reading this and I hope we can have a mutually beneficial collaboration. Best regards, Blaine.
+         </p>
+       </div>
+       <div class="hidden" id="projects">
+         <ul class="list">
+           <li>
+             <div class="list_heading">This portfolio site</div>
+             <span>This website is hosted by the Apache webserver on my personal AWS EC2.
+               The domain "blainedeyoung.com" is registered with Route 53 and is routed to an elastic IP attached to that EC2.
+               The domain also has an alias, so either "blainedeyoung.com" or "www.blainedeyoung.com" reaches the same site.
+               The site itself uses basic HTML, custom CSS, and simple javascript. The code is available on
+               <a class="hotlink" href="https://github.com/blainedeyoung/portfolio" target="_blank">Github</a>
+               .</span>
+           </li>
+         </ul>
+         <br>
+         <br>
+         <span>Other projects will become available as I get them ready for deployment to my EC2.</span>
+       </div>
+       <div class="hidden" id="links">
+         <ul class="list">
+           <li>
+             <div class="list_heading">email</div>
+             <a target="_blank" href="mailto:blainedeyoung@gmail.com">blainedeyoung@gmail.com</a>
+           </li>
+           <li>
+             <div class="list_heading">linkedin</div>
+             <a target="_blank" href="https://www.linkedin.com/in/blainedeyoung">blainedeyoung</a>
+           </li>
+           <li>
+             <div class="list_heading">github</div>
+             <a target="_blank" href="https://github.com/blainedeyoung/">blainedeyoung</a>
+           </li>
+         </ul>
+       </div>
+       <button class="hidden" id="mainMenuButton">Main Menu</button>
+     </div>
+     <div id="credit"> background image by
+       <a target="_blank" href="http://www.clarityincorporated.com/slide/home/water-ripple-d-blue-splash-ripples-drops-free-60988/">Clarity</a>
+     </div>
+   </div>
+   <script src="./app.js" type="text/javascript"></script>
+ </body>
+
+ </html>
