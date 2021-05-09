@@ -25,7 +25,7 @@ mainMenuB.onclick = () => {
 
 //display the about
 aboutB.onclick = () => {
-    topbar.innerHTML = "Displaying About page";
+    topbar.innerHTML = "Displaying About Page";
     mainMenu.setAttribute('class', 'hidden');
     about.setAttribute('class', 'visible');
     mainMenuB.setAttribute('class', 'visible');
@@ -33,7 +33,7 @@ aboutB.onclick = () => {
 
 //display the projects
 projectsB.onclick = () => {
-    topbar.innerHTML = "Displaying Projects page";
+    topbar.innerHTML = "Displaying Projects Page";
     mainMenu.setAttribute('class', 'hidden');
     projects.setAttribute('class', 'visible');
     mainMenuB.setAttribute('class', 'visible');
@@ -43,7 +43,7 @@ projectsB.onclick = () => {
 
 //display the links
 linksB.onclick = () => {
-    topbar.innerHTML = "Displaying Links page";
+    topbar.innerHTML = "Displaying Links Page";
     mainMenu.setAttribute('class', 'hidden');
     links.setAttribute('class', 'visible');
     mainMenuB.setAttribute('class', 'visible');
