@@ -14,37 +14,35 @@ const links = document.getElementById("links");
 //return to main menu
 mainMenuB.onclick = () => {
     topbar.innerHTML = "Main Menu";
-    //might have to add this if I change the viewer to overflow for projects
-    //document.getElementById("viewer").style.overflow = 'hidden';
-    about.setAttribute('class', 'hidden');
-    projects.setAttribute('class', 'hidden');
-    links.setAttribute('class', 'hidden');
-    mainMenuB.setAttribute('class', 'hidden');
-    mainMenu.setAttribute('class', 'visible');
+    about.style.display = "none";
+    projects.style.display = "none";
+    links.style.display = "none";
+    mainMenuB.style.display = "none";
+    mainMenu.style.display = "flex";
 };
 
 //display the about
 aboutB.onclick = () => {
-    topbar.innerHTML = "Displaying About Page";
-    mainMenu.setAttribute('class', 'hidden');
-    about.setAttribute('class', 'visible');
-    mainMenuB.setAttribute('class', 'visible');
+    topbar.innerHTML = "About Page";
+    mainMenu.style.display = "none";
+    about.style.display = "block";
+    mainMenuB.style.display = "block";
 };
 
 //display the projects
 projectsB.onclick = () => {
-    topbar.innerHTML = "Displaying Projects Page";
-    mainMenu.setAttribute('class', 'hidden');
-    projects.setAttribute('class', 'visible');
-    mainMenuB.setAttribute('class', 'visible');
+    topbar.innerHTML = "Projects Page";
+    mainMenu.style.display = "none";
+    projects.style.display = "flex";
+    mainMenuB.style.display = "block";
     //might need this when we get more projects
     //document.getElementById("viewer").style.overflow = 'scroll';
 };
 
 //display the links
 linksB.onclick = () => {
-    topbar.innerHTML = "Displaying Links Page";
-    mainMenu.setAttribute('class', 'hidden');
-    links.setAttribute('class', 'visible');
-    mainMenuB.setAttribute('class', 'visible');
+    topbar.innerHTML = "Links Page";
+    mainMenu.style.display = "none";
+    links.style.display = "flex";
+    mainMenuB.style.display = "block";
 };

@@ -23,27 +23,20 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: steelblue;
-  background-image: url("../images/water-ripple.jpg");
+  background-image: url("../images/sonika-agarwal-9MGe1GfJ4IE-unsplash.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: cover; }
 
 a {
   color: yellow; }
 
 p {
-  margin: 20px; }
+  margin: 20px 50px; }
 
 button {
   display: block;
-  margin: 20px;
+  margin: 20px 20px 0px;
   width: 100px; }
-
-.visible {
-  display: block; }
-
-.hidden {
-  display: none; }
 
 .container {
   height: 80vh;
@@ -59,9 +52,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: gold; }
 
 #viewer {
@@ -74,22 +67,37 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: rgba(0, 0, 0, 0.9);
-  min-height: 95%;
-  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.95);
+  min-height: 95%;
+  width: 100%;
   color: yellow; }
 
-#about {
-  margin-left: 50px;
-  margin-right: 50px; }
-
-#projects {
-  margin-left: 50px;
-  margin-right: 50px; }
+.panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%; }
+  .panel#about {
+    display: none; }
+  .panel#projects {
+    display: none; }
+  .panel#links {
+    display: none; }
 
 #credit {
   margin-top: 10px;
@@ -120,6 +128,9 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px; }
+
+#mainMenuButton {
+  display: none; }
 
 @media only screen and (max-width: 950px) {
   body {

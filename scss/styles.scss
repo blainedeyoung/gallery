@@ -1,122 +1,129 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: steelblue;
-    background-image: url('../images/water-ripple.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: steelblue;
+  background-image: url("../images/sonika-agarwal-9MGe1GfJ4IE-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
-    color:yellow;
+  color: yellow;
 }
 
 p {
-    margin: 20px;
+  margin: 20px 50px;
 }
 
 button {
-    display: block;
-    margin: 20px;
-    width: 100px;
-}
-
-.visible {
-    display: block;
-}
-
-.hidden {
-    display: none;
+  display: block;
+  margin: 20px 20px 0px;
+  width: 100px;
 }
 
 .container {
-    height: 80vh;
-    width: 80vw;
+  height: 80vh;
+  width: 80vw;
 }
 
 #topbar {
-    display: flex;
-    height: 5%;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    align-items: center;
-    justify-content: space-evenly;
-    color: gold;
+  display: flex;
+  height: 5%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  color: gold;
 }
 
 #viewer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.9);
-    min-height: 95%;
-    width: 100%;
-    flex-direction: column;
-    color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.95);
+  min-height: 95%;
+  width: 100%;
+  color: yellow;
 }
 
-#about {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-#projects {
-    margin-left: 50px;
-    margin-right: 50px;
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  &#about {
+    display: none;
+  }
+  &#projects {
+    display: none;
+  }
+  &#links {
+    display: none;
+  }
 }
 
 #credit {
-    margin-top: 10px;
-    color: aliceblue;
+  margin-top: 10px;
+  color: aliceblue;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .list_heading {
-    color: gold;
-    text-decoration:underline;
-    text-decoration-color: gold;
-    margin-bottom: 20px;
+  color: gold;
+  text-decoration: underline;
+  text-decoration-color: gold;
+  margin-bottom: 20px;
 }
 
 li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#mainMenuButton {
+  display: none;
 }
 
 @media only screen and (max-width: 950px) {
-    body {
-        font-size: 12px;
-    }
-    .container {
-        height: 100%;
-        width: 100%;
-    }
-    .viewer {
-        overflow: scroll;
-    }
-    #about {
-        margin: 20px;
-    }
-    #projects {
-        margin: 20px;
-    }
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .viewer {
+    overflow: scroll;
+  }
+
+  #about {
+    margin: 20px;
+  }
+
+  #projects {
+    margin: 20px;
+  }
 }
