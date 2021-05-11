@@ -1,3 +1,5 @@
+@import 'mixins';
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +9,9 @@
 }
 
 body {
+  @include flexAndCenter(column);
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   background-color: steelblue;
   background-image: url("../images/sonika-agarwal-9MGe1GfJ4IE-unsplash.jpg");
   background-repeat: no-repeat;
@@ -23,13 +22,13 @@ a {
   color: yellow;
 }
 
-p {
+.aboutBlock {
   margin: 20px 50px;
 }
 
 button {
   display: block;
-  margin: 20px 20px 0px;
+  margin: 20px 20px 0;
   width: 100px;
 }
 
@@ -49,27 +48,18 @@ button {
 }
 
 #viewer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.95);
+  @include flexAndCenter(column);
+  background-color: rgba(0, 0, 0, 0.92);
   min-height: 95%;
   width: 100%;
   color: yellow;
 }
 
 .panel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flexAndCenter(column);
   height: 100%;
   width: 100%;
   &#about {
-    display: none;
-  }
-  &#projects {
     display: none;
   }
   &#links {
@@ -82,48 +72,81 @@ button {
   color: aliceblue;
 }
 
+#projectsPanel {
+  display: none;
+}
+
+#projectsNavbar {
+  @include flexAndCenter(row);
+  height: 5%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.projectNavLink {
+  align-self: flex-start;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+#projectsListButton {
+  box-shadow: 0 0 20px gold;
+}
+
+#projectsViewer {
+  background-color: rgba(0, 0, 0, 0);
+  min-height: 95%;
+  width: 100%;
+  color: yellow;
+}
+
 .list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  margin: 30px 0;
+  text-align: center;
+  &#bootstrapSitesList {
+    display: none;
+  }
+  &#reactAppList {
+    display: none;
+  }
 }
 
 .list_heading {
-  color: gold;
+  display: block;
+  color: #fdff00;
   text-decoration: underline;
-  text-decoration-color: gold;
-  margin-bottom: 20px;
+  text-decoration-color: #fdff00;
+  margin: 40px;
 }
 
-li {
+.list_item_body_container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
+  flex-direction: row;
+  margin: 20px 30px;
+}
+
+.list_image {
+  display: inline;
+  height: 300px;
+  width: 600px;
+  margin-right: 50px;
+}
+
+.list_description {
+  text-align: left;
+  margin-top: 100px;
+}
+
+.link_list_heading {
+  margin: 50px 0 20px;
 }
 
 #mainMenuButton {
   display: none;
+  margin: 20px;
 }
 
-@media only screen and (max-width: 950px) {
-  body {
-    font-size: 12px;
-  }
-
-  .container {
-    height: 100%;
-    width: 100%;
-  }
-
-  .viewer {
-    overflow: scroll;
-  }
-
-  #about {
-    margin: 20px;
-  }
-
-  #projects {
-    margin: 20px;
-  }
-}
+@import 'breakpoints';

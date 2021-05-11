@@ -1,0 +1,28 @@
+@media only screen and (max-width: 950px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .list_image {
+    height: 100px;
+    width: 200px;
+  }
+  
+  .list_description {
+    margin-top: 10px;
+  }
+
+  .viewer {
+    overflow: scroll;
+  }
+
+  #about {
+    margin: 20px;
+  }
+
+}

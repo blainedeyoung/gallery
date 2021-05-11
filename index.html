@@ -25,13 +25,13 @@
          <button id="linksButton">Links</button>
        </div>
        <div class="panel" id="about">
-         <p>
+         <p class="aboutBlock">
            My problem with establishing a career has always been I wasn't sure exactly
            what I wanted to do. I've considered and made strong motions toward becoming
            a biologist, a chemist, and a mathematician, with some shorter spasms toward
            philosophy, law, literary scholarship, and business.
          </p>
-         <p>
+         <p class="aboutBlock">
            I was in college forever because it turns out that taking two classes from every
            college in a university doesn't add up to a degree. When I was finally informed that
            if I didn't graduate that year they were going to cut off my funding, I did an audit
@@ -41,7 +41,7 @@
            And that's how I came to have that Bachelor's Degree.
            I was only one class short of a minor in chemistry, and I think three classes short of a minor in math.
          </p>
-         <p>
+         <p class="aboutBlock">
            After I got an English degree because of its expedience,
            I briefly considered a career in literary scholarship. I have this theory about Milton's
            Paradise Lost that is the kind of thing that becomes a basis for such a career, but I
@@ -49,7 +49,7 @@
            I stayed in college and got a Master's in Computer Science which has been a consistent
            interest of mine since childhood.
          </p>
-         <p>
+         <p class="aboutBlock">
            Looking at the available concentrations for Master's Computer Science programs, I immediately
            gravitated toward Bioinformatics because biology has been one of the central pre-occupations of my life.
            That means I spent, more or less,
@@ -57,67 +57,115 @@
            way to study bioinformatics, and I had a hard time getting a job. The college really should develop a program
            geared directly toward that specialization or quit saying they have such a program.
          </p>
-         <p>
+         <p class="aboutBlock">
            After college my father passed away and left me a small inheritance. A smarter person might have put that
            money into a retirement account, but I decided to take some time off to think about what I was going to do.
            I eventually decided web development was going to be my career path because I like it and there's plenty of
            demand, but I'd barely stratched the surface of that in college. So I went to V School and learned MERN
            stack development.
          </p>
-         <p>
+         <p class="aboutBlock">
            Quite to my surprise, the first job offer I got after V School was as a Bioinformatician working for the state.
            So I decided to give that a go, but the lab really didn't need me. The researchers all knew how to do the computer
            stuff they needed for their research, so after a six month contract they didn't offer me a permanent position. That
            was just about the time Covid-19 wrecked the economy. I bet those biologists really wish I was still working with them!
          </p>
-         <p>
+         <p class="aboutBlock">
            Now I have the eternal problem of looking for the few years of job experience that virtually every job requires.
            So now I'm building this portfolio site to showcase my skills and hopefully get a job.
          </p>
-         <p>
+         <p class="aboutBlock">
            I'm bright. I'm capable. I'm mature. And I have enough life experience to know that
            anything I don't know I can learn at speed.
          </p>
-         <p>
+         <p class="aboutBlock">
            Thank you for reading this and I hope we can have a mutually beneficial collaboration. Best regards, Blaine.
          </p>
        </div>
-       <div class="panel" id="projects">
-         <ul class="list">
-           <li>
-             <div class="list_heading">This portfolio site</div>
-             <p>This website is hosted by the Apache webserver on my personal AWS EC2.
-               The domain "blainedeyoung.com" is registered with Route 53 and is routed to an elastic IP attached to that EC2.
-               The domain also has an alias, so either "blainedeyoung.com" or "www.blainedeyoung.com" reaches the same site.
-               The site itself uses basic HTML, custom CSS, and simple javascript. The code is available on
-               <a class="hotlink" href="https://github.com/blainedeyoung/portfolio" target="_blank">Github</a>
-               .</p>
-           </li>
-         </ul>
-         <br>
-         <br>
-         <span>Other projects will become available as I get them ready for deployment to my EC2.</span>
+       <div class="panel" id="projectsPanel">
+         <nav id="projectsNavbar">
+           <a class="projectNavLink" onclick="returnToMainMenu()">Main Menu</a>
+           <a class="projectNavLink" id="projectsListButton">Projects Menu</a>
+           <a class="projectNavLink" id="bootstrapSitesButton">Bootstrap Sites</a>
+           <a class="projectNavLink" id="reactAppButton">React apps</a>
+         </nav>
+         <div id="projectsViewer">
+           <ul class="list" id="projectsList">
+             <li>
+               <h6 class="list_heading">
+                 This portfolio site
+               </h6>
+               <div class="list_item_body_container">
+                 <img class="list_image" src="images/GalleryImage.png" />
+                 <p class="list_description">This website is hosted by the Apache webserver on my personal AWS EC2.
+                   The domain "blainedeyoung.com" is registered with Route 53 and is routed to an elastic IP attached to that EC2.
+                   The domain also has an alias, so either "blainedeyoung.com" or "www.blainedeyoung.com" reaches the same site.
+                   The site itself uses HTML, custom SCSS, and simple javascript.
+                   The code is available on <a href="https://github.com/blainedeyoung/gallery" target="_blank">Github</a>.</p>
+               </div>
+             </li>
+             <li>
+               <h6 class="list_heading">
+                 The landing page
+               </h6>
+               <div class="list_item_body_container">
+                 <img class="list_image" src="images/PersonalPageImage.png" />
+                 <p class="list_description">
+                   You've probably already seen the landing page. It features animated images I made myself with Inkscape,
+                   a list of my skills with icons from fontawesome, and my contact information which you'll find repeated
+                   under 'links' in the main menu of this page.
+                   The code is available on <a href="https://github.com/blainedeyoung/personal-page" target="_blank">Github</a>.</p>
+               </div>
+             </li>
+           </ul>
+           <ul class="list" id="bootstrapSitesList">
+             <li>
+               <h6 class="list_heading">
+                 some site
+               </h6>
+               <div class="list_item_body_container">
+                 <img class="list_image" src="images/PersonalPageImage.png" />
+                 <p class="list_description">
+                   Some site I haven't made yet.
+                   The code is available on <a href="https://github.com/blainedeyoung/personal-page" target="_blank">Github</a>.</p>
+               </div>
+             </li>
+           </ul>
+           <ul class="list" id="reactAppList">
+             <li>
+               <h6 class="list_heading">
+                 some other site
+               </h6>
+               <div class="list_item_body_container">
+                 <img class="list_image" src="images/PersonalPageImage.png" />
+                 <p class="list_description">
+                   Some other site I haven't made yet.
+                   The code is available on <a href="https://github.com/blainedeyoung/personal-page" target="_blank">Github</a>.</p>
+               </div>
+             </li>
+           </ul>
+         </div>
        </div>
        <div class="panel" id="links">
          <ul class="list">
            <li>
-             <div class="list_heading">email</div>
+             <div class="link_list_heading">email</div>
              <a target="_blank" href="mailto:blainedeyoung@gmail.com">blainedeyoung@gmail.com</a>
            </li>
            <li>
-             <div class="list_heading">linkedin</div>
+             <div class="link_list_heading">linkedin</div>
              <a target="_blank" href="https://www.linkedin.com/in/blainedeyoung">blainedeyoung</a>
            </li>
            <li>
-             <div class="list_heading">github</div>
+             <div class="link_list_heading">github</div>
              <a target="_blank" href="https://github.com/blainedeyoung/">blainedeyoung</a>
            </li>
          </ul>
        </div>
-        <button id="mainMenuButton">Main Menu</button>
+       <button id="mainMenuButton" onclick="returnToMainMenu()">Main Menu</button>
      </div>
      <div id="credit"> Photo by <target="_blank" a href="https://unsplash.com/@sonika_agarwal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sonika Agarwal</a> on
-       <a target="_blank" href="https://unsplash.com/s/photos/water-droplet-ripple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+         <a target="_blank" href="https://unsplash.com/s/photos/water-droplet-ripple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
      </div>
    </div>
    <script src="./app.js" type="text/javascript"></script>

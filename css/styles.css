@@ -7,21 +7,21 @@
   font-size: 16px; }
 
 body {
-  width: 100vw;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100vw;
+  height: 100vh;
   background-color: steelblue;
   background-image: url("../images/sonika-agarwal-9MGe1GfJ4IE-unsplash.jpg");
   background-repeat: no-repeat;
@@ -30,12 +30,12 @@ body {
 a {
   color: yellow; }
 
-p {
+.aboutBlock {
   margin: 20px 50px; }
 
 button {
   display: block;
-  margin: 20px 20px 0px;
+  margin: 20px 20px 0;
   width: 100px; }
 
 .container {
@@ -71,7 +71,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.92);
   min-height: 95%;
   width: 100%;
   color: yellow; }
@@ -94,8 +94,6 @@ button {
   width: 100%; }
   .panel#about {
     display: none; }
-  .panel#projects {
-    display: none; }
   .panel#links {
     display: none; }
 
@@ -103,17 +101,44 @@ button {
   margin-top: 10px;
   color: aliceblue; }
 
+#projectsPanel {
+  display: none; }
+
+#projectsNavbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 5%;
+  width: 100%;
+  background-color: black; }
+
+.projectNavLink {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0 20px;
+  cursor: pointer; }
+
+#projectsListButton {
+  -webkit-box-shadow: 0 0 20px gold;
+          box-shadow: 0 0 20px gold; }
+
+#projectsViewer {
+  background-color: rgba(0, 0, 0, 0);
+  min-height: 95%;
+  width: 100%;
+  color: yellow; }
+
 .list {
-  list-style: none; }
-
-.list_heading {
-  color: gold;
-  text-decoration: underline;
-  -webkit-text-decoration-color: gold;
-          text-decoration-color: gold;
-  margin-bottom: 20px; }
-
-li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,16 +146,48 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 30px; }
+  list-style: none;
+  margin: 30px 0;
+  text-align: center; }
+  .list#bootstrapSitesList {
+    display: none; }
+  .list#reactAppList {
+    display: none; }
+
+.list_heading {
+  display: block;
+  color: #fdff00;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fdff00;
+          text-decoration-color: #fdff00;
+  margin: 40px; }
+
+.list_item_body_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px 30px; }
+
+.list_image {
+  display: inline;
+  height: 300px;
+  width: 600px;
+  margin-right: 50px; }
+
+.list_description {
+  text-align: left;
+  margin-top: 100px; }
+
+.link_list_heading {
+  margin: 50px 0 20px; }
 
 #mainMenuButton {
-  display: none; }
+  display: none;
+  margin: 20px; }
 
 @media only screen and (max-width: 950px) {
   body {
@@ -140,11 +197,15 @@ li {
     height: 100%;
     width: 100%; }
 
+  .list_image {
+    height: 100px;
+    width: 200px; }
+
+  .list_description {
+    margin-top: 10px; }
+
   .viewer {
     overflow: scroll; }
 
   #about {
-    margin: 20px; }
-
-  #projects {
     margin: 20px; } }
