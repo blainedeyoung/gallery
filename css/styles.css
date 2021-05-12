@@ -8,7 +8,7 @@
   html {
     font-size: 12px; }
 
-  .list_description {
+  .list-description {
     margin-top: 1rem; } }
 @media screen and (max-width: 60em) and (min-width: 50.01em) {
   html {
@@ -21,7 +21,7 @@
   .viewer {
     overflow: scroll; }
 
-  .list_description {
+  .list-description {
     margin-top: 0; }
 
   #about {
@@ -37,10 +37,10 @@
   .viewer {
     overflow: scroll; }
 
-  .list_description {
+  .list-description {
     margin-top: 0; }
 
-  .list_image {
+  .list-image {
     height: 10rem;
     width: 20rem; }
 
@@ -221,7 +221,7 @@ button {
   .list#reactAppList {
     display: none; }
 
-.list_heading {
+.list-heading {
   display: block;
   text-align: center;
   color: #fdff00;
@@ -230,7 +230,7 @@ button {
           text-decoration-color: #fdff00;
   margin: 40px; }
 
-.list_item_body_container {
+.list-item-body-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,22 +240,22 @@ button {
           flex-direction: row;
   margin: 20px 30px; }
 
-.list_image {
+.list-image {
   display: inline;
   height: 20rem;
   width: 40rem;
   margin-right: 3rem; }
 
-.list_description {
+.list-description {
   text-align: left;
   margin-top: 6rem; }
 
-.link_list {
+.link-list {
   list-style: none;
   text-align: center;
   margin-bottom: 30px; }
 
-.link_list_heading {
+.link-list-heading {
   margin: 50px 0 20px; }
 
 #mainMenuButton {
@@ -272,7 +272,7 @@ button {
   html {
     font-size: 12px; }
 
-  .list_description {
+  .list-description {
     margin-top: 1rem; } }
 @media screen and (max-width: 60em) and (min-width: 50.01em) {
   html {
@@ -285,7 +285,7 @@ button {
   .viewer {
     overflow: scroll; }
 
-  .list_description {
+  .list-description {
     margin-top: 0; }
 
   #about {
@@ -301,10 +301,10 @@ button {
   .viewer {
     overflow: scroll; }
 
-  .list_description {
+  .list-description {
     margin-top: 0; }
 
-  .list_image {
+  .list-image {
     height: 10rem;
     width: 20rem; }
 
