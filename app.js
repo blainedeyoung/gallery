@@ -16,12 +16,14 @@ const projects = document.getElementById("projectsPanel");
 const links = document.getElementById("links");
 
 //project panels
+const container = document.querySelector(".container");
 const projectsList = document.getElementById("projectsList");
 const bootstrapSitesList = document.getElementById("bootstrapSitesList");
 const reactAppList = document.getElementById("reactAppList");
 
 //return to main menu
 function returnToMainMenu() {
+    container.style.height = "80vh";
     topbar.innerHTML = "Main Menu";
     viewer.style.display = "flex";
     about.style.display = "none";
@@ -33,6 +35,7 @@ function returnToMainMenu() {
 
 //display the projects menu
 projectsB.onclick = () => {
+    container.style.height = "100vh";
     topbar.innerHTML = "Projects Page";
     viewer.style.display = "block";
     mainMenu.style.display = "none";
