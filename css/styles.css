@@ -39,9 +39,6 @@
   html {
     font-size: 8px; }
 
-  #topbar {
-    font-size: 300%; }
-
   button {
     font-size: 300%; }
 
@@ -98,7 +95,7 @@ button {
   color: gold;
   display: block;
   margin: 20px 20px 0;
-  min-width: 12rem; }
+  min-width: 15rem; }
   button:hover {
     -webkit-box-shadow: 2px 2px 5px grey;
             box-shadow: 2px 2px 5px grey; }
@@ -125,6 +122,8 @@ button {
   width: 100%;
   background-color: black;
   color: gold; }
+  #topbar .greeting {
+    padding: 0 10% !important; }
 
 #viewer {
   display: -webkit-box;
@@ -309,9 +308,6 @@ button {
 @media screen and (max-width: 50em) {
   html {
     font-size: 8px; }
-
-  #topbar {
-    font-size: 300%; }
 
   button {
     font-size: 300%; }
