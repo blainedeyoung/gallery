@@ -1,7 +1,7 @@
 @import 'mixins';
 @import 'breakpoints';
 
-* {
+body, p, ul, li {
   margin: 0;
   padding: 0;
 }
@@ -131,6 +131,7 @@ button {
   text-decoration: underline;
   text-decoration-color: #fdff00;
   margin: 40px;
+  font-size: 200%;
 }
 
 .list-item-body-container {

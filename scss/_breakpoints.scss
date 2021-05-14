@@ -25,11 +25,20 @@ html {
     height: 100%;
     width: 100%;
   }
+  #topbar {
+    font-size: 200%;
+  }
   .viewer {
     overflow: scroll;
   }
+  button {
+    font-size: 200%;
+  }
   .list-description {
     margin-top: 0;
+  }
+  .link-list {
+    font-size: 200%;
   }
   #about {
     margin: 20px;
@@ -40,22 +49,18 @@ html {
   html {
     font-size: 8px;
   }
-  .container {
-    height: 100%;
-    width: 100%;
+  #topbar {
+    font-size: 300%;
   }
-  .viewer {
-    overflow: scroll;
-  }
-  .list-description {
-    margin-top: 0;
+  button {
+    font-size: 300%;
   }
   .list-image {
     margin: 0 2rem;
     height: 10rem;
     width: 20rem;
   }
-  #about {
-    margin: 20px;
+  .link-list {
+    font-size: 300%;
   }
 }
