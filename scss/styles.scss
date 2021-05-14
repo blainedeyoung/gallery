@@ -4,7 +4,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+html {
   font-family: sans-serif;
   font-size: 16px;
 }
@@ -39,7 +41,7 @@ button {
   color: gold;
   display: block;
   margin: 20px 20px 0;
-  width: 12rem;
+  min-width: 12rem;
   &:hover {
     box-shadow: 2px 2px 5px grey;
   }
