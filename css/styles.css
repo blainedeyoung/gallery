@@ -38,9 +38,11 @@
     overflow: scroll; }
 
   .list-description {
+    display: inline;
     margin-top: 0; }
 
   .list-image {
+    margin: 2rem;
     height: 10rem;
     width: 20rem; }
 
@@ -302,9 +304,11 @@ button {
     overflow: scroll; }
 
   .list-description {
+    display: inline;
     margin-top: 0; }
 
   .list-image {
+    margin: 2rem;
     height: 10rem;
     width: 20rem; }
 
