@@ -256,6 +256,10 @@ button {
   text-align: left;
   margin-top: 6rem; }
 
+.experimentalSVGs {
+  height: 200px;
+  width: 200px; }
+
 .link-list {
   list-style: none;
   text-align: center;
