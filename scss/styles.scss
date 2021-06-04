@@ -75,15 +75,6 @@ button {
   @include flexAndCenter(column);
   height: 100%;
   width: 100%;
-  &#about {
-    display: none;
-  }
-  &#links {
-    display: none;
-  }
-  &#projectsPanel {
-    display: none;
-  }
 }
 
 #credit {
@@ -99,13 +90,8 @@ button {
 }
 
 .projectNavLink {
-  align-self: flex-start;
   margin: 0 20px;
   cursor: pointer;
-}
-
-#projectsListButton {
-  box-shadow: 0 0 20px gold;
 }
 
 #projectsViewer {
@@ -115,16 +101,15 @@ button {
   color: yellow;
 }
 
+.projectsListDescription {
+  margin: 20px;
+}
+
 .list {
   @include flexAndCenter(column);
   list-style: none;
   margin: 30px 0;
-  &#bootstrapSitesList {
-    display: none;
-  }
-  &#reactAppList {
-    display: none;
-  }
+  min-height: 100%;
 }
 
 .list-heading {
@@ -166,8 +151,8 @@ button {
 }
 
 #mainMenuButton {
-  display: none;
   margin: 20px;
 }
 
+@import 'jsAppliedClasses';
 @import 'breakpoints';

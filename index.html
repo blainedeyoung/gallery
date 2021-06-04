@@ -17,14 +17,14 @@
        <p class="greeting">Welcome to Blaine DeYoung's personal webserver! What can I do for you today?</p>
      </div>
      <!-- this is the area where information will be displayed -->
-     <div id="viewer">
-       <div class="panel" id="mainMenu">
+     <div class="justify-content-center" id="viewer">
+       <div class="d-flex panel" id="mainMenu">
          <button id="aboutButton">About Me</button>
          <a href="../resume.pdf" target="_blank" id="resumeLink"><button id="resumeButton">Resume</button></a>
          <button id="projectsButton">Projects</button>
          <button id="linksButton">Links</button>
        </div>
-       <div class="panel" id="about">
+       <div class="d-none panel" id="about">
          <p class="aboutBlock">
            My problem with establishing a career has always been I wasn't sure exactly
            what I wanted to do. I've considered and made strong motions toward becoming
@@ -82,15 +82,15 @@
            Thank you for reading this and I hope we can have a mutually beneficial collaboration. Best regards, Blaine.
          </p>
        </div>
-       <div class="panel" id="projectsPanel">
+       <div class="d-none panel" id="projectsPanel">
          <nav id="projectsNavbar">
            <a class="projectNavLink" onclick="returnToMainMenu()">Main Menu</a>
-           <a class="projectNavLink" id="projectsListButton">Projects Menu</a>
+           <a class="projectNavLink shadowed" id="projectsListButton">Projects Menu</a>
            <a class="projectNavLink" id="bootstrapSitesButton">Bootstrap Sites</a>
            <a class="projectNavLink" id="reactAppButton">React apps</a>
          </nav>
          <div id="projectsViewer">
-           <ul class="list" id="projectsList">
+           <ul class="d-flex list" id="projectsList">
              <li>
                <h6 class="list-heading">
                  This portfolio site
@@ -118,20 +118,28 @@
                </div>
              </li>
            </ul>
-           <ul class="list" id="bootstrapSitesList">
+           <ul class="d-none list" id="bootstrapSitesList">
+             <p class="projectsListDescription">
+               These sites are mock-ups, front-end stubs.  Links won't go anywhere.  Buttons and form elements may or may not do anything.
+               I'm making them as an exercise in design and CSS.  They use themed Bootstrap 5.0.1.  Look for a grey aboutPanel at the bottom
+               of the site for information about the content and functionality.  Clicking the images below will take you to the websites.
+             </p>
              <li>
                <h6 class="list-heading">
-                 some site
+                 Fashion Over Function
                </h6>
                <div class="list-item-body-container">
-                 <img class="list-image" src="images/personalPageImage.png" />
+                 <a href="http://blainedeyoung.com/bootstrap-sites/fashion-over-function/"><img class="list-image" src="images/fashionOverFunction.png" /></a>
                  <p class="list-description">
-                   Some site I haven't made yet.
-                   The code is available on <a href="https://github.com/blainedeyoung/personal-page" target="-blank">Github</a>.</p>
+                   My idea for the first two sites is a store that sells a wide variety of cloths.
+                   They've decided to divide their offerings into two groups, cloths that are worn because they look good
+                   (Fashion over Function) and cloths that are worn because they're good for something (Function over Fashion).
+                   This seems like a highly questionable marketing strategy to me, but hey, I just make the websites.
+                   The code is available on <a href="https://github.com/blainedeyoung/fashion-over-function" target="-blank">Github</a>.</p>
                </div>
              </li>
            </ul>
-           <ul class="list" id="reactAppList">
+           <ul class="d-none list" id="reactAppList">
              <li>
                <h6 class="list-heading">
                  some other site
@@ -146,7 +154,7 @@
            </ul>
          </div>
        </div>
-       <div class="panel" id="links">
+       <div class="d-none panel" id="links">
          <ul class="link-list">
            <li>
              <div class="link-list-heading">email</div>
@@ -162,7 +170,7 @@
            </li>
          </ul>
        </div>
-       <button id="mainMenuButton" onclick="returnToMainMenu()">Main Menu</button>
+       <button class="d-none" id="mainMenuButton" onclick="returnToMainMenu()">Main Menu</button>
      </div>
      <div id="credit"> Photo by <target="_blank" a href="https://unsplash.com/@sonika_agarwal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sonika Agarwal</a> on
          <a target="_blank" href="https://unsplash.com/s/photos/water-droplet-ripple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

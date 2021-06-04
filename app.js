@@ -23,68 +23,67 @@ const reactAppList = document.getElementById("reactAppList");
 
 //return to main menu
 function returnToMainMenu() {
-    container.style.height = "80vh";
-    topbar.innerHTML = "Main Menu";
-    viewer.style.display = "flex";
-    about.style.display = "none";
-    projects.style.display = "none";
-    links.style.display = "none";
-    mainMenuB.style.display = "none";
-    mainMenu.style.display = "flex";
+    container.classList.remove("enlarged");
+    topbar.textContent = "Main Menu";
+    viewer.classList.replace("justify-content-start", "justify-content-center");
+    about.classList.replace("d-block", "d-none");
+    projects.classList.replace("d-flex", "d-none");
+    links.classList.replace("d-flex", "d-none");
+    mainMenuB.classList.replace("d-block", "d-none");
+    mainMenu.classList.replace("d-none", "d-flex");
 };
 
 //display the projects menu
 projectsB.onclick = () => {
-    container.style.height = "100vh";
-    topbar.innerHTML = "Projects Page";
-    viewer.style.display = "block";
-    mainMenu.style.display = "none";
-    projects.style.display = "flex";
-    mainMenuB.style.display = "none";
+    container.classList.add("enlarged");
+    topbar.textContent = "Projects Page";
+    viewer.classList.replace("justify-content-center", "justify-content-start");
+    mainMenu.classList.replace("d-flex", "d-none");
+    projects.classList.replace("d-none", "d-flex");
 };
 
 //display the about
 aboutB.onclick = () => {
-    topbar.innerHTML = "About Page";
-    mainMenu.style.display = "none";
-    about.style.display = "block";
-    mainMenuB.style.display = "block";
+    topbar.textContent = "About Page";
+    mainMenu.classList.replace("d-flex", "d-none");
+    about.classList.replace("d-none", "d-block");
+    mainMenuB.classList.replace("d-none", "d-block");
 };
 
 //display the links
 linksB.onclick = () => {
-    topbar.innerHTML = "Links Page";
-    mainMenu.style.display = "none";
-    links.style.display = "flex";
-    mainMenuB.style.display = "block";
+    topbar.textContent = "Links Page";
+    mainMenu.classList.replace("d-flex", "d-none");
+    links.classList.replace("d-none", "d-flex");
+    mainMenuB.classList.replace("d-none", "d-block");
 };
 
 //display bootstrap sites list on projectsViewer
 projectsListButton.onclick = () => {
-  projectsList.style.display = "flex";
-  bootstrapSitesList.style.display = "none";
-  reactAppList.style.display = "none";
-  projectsListButton.style.boxShadow = "0 0 20px gold";
-  bootstrapSitesButton.style.boxShadow = "none";
-  reactAppButton.style.boxShadow = "none";
+  projectsList.classList.replace("d-none", "d-flex");
+  bootstrapSitesList.classList.replace("d-flex", "d-none");
+  reactAppList.classList.replace("d-flex", "d-none");
+  projectsListButton.classList.add("shadowed");
+  bootstrapSitesButton.classList.remove("shadowed");
+  reactAppButton.classList.remove("shadowed");
 }
 
 //display bootstrap sites list on projectsViewer
 bootstrapSitesButton.onclick = () => {
-  projectsList.style.display = "none";
-  bootstrapSitesList.style.display = "flex";
-  reactAppList.style.display = "none";
-  projectsListButton.style.boxShadow = "none";
-  bootstrapSitesButton.style.boxShadow = "0 0 20px gold";
-  reactAppButton.style.boxShadow = "none";
+  projectsList.classList.replace("d-flex", "d-none");
+  bootstrapSitesList.classList.replace("d-none", "d-flex");
+  reactAppList.classList.replace("d-flex", "d-none");
+  projectsListButton.classList.remove("shadowed");
+  bootstrapSitesButton.classList.add("shadowed");
+  reactAppButton.classList.remove("shadowed");
 }
 
 //display react app list on projectsViewer
 reactAppButton.onclick = () => {
-  projectsList.style.display = "none";
-  bootstrapSitesList.style.display = "none";
-  reactAppList.style.display = "flex";
-  projectsListButton.style.boxShadow = "none";
-  bootstrapSitesButton.style.boxShadow = "none";
-  reactAppButton.style.boxShadow = "0 0 20px gold";
+  projectsList.classList.replace("d-flex", "d-none");
+  bootstrapSitesList.classList.replace("d-flex", "d-none");
+  reactAppList.classList.replace("d-none", "d-flex");
+  projectsListButton.classList.remove("shadowed");
+  bootstrapSitesButton.classList.remove("shadowed");
+  reactAppButton.classList.add("shadowed");
 }
