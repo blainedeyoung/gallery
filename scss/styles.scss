@@ -24,12 +24,12 @@ body {
 
 a {
   color: yellow;
-  &#resumeLink {
+  &#resume-link {
     text-decoration: none;
   }
 }
 
-.aboutBlock {
+.about-block {
   margin: 20px 50px;
 }
 
@@ -82,26 +82,26 @@ button {
   color: aliceblue;
 }
 
-#projectsNavbar {
+#projects-navbar {
   @include flexAndCenter(row);
   height: 5%;
   width: 100%;
   background-color: rgb(0, 0, 0);
 }
 
-.projectNavLink {
+.project-nav-link {
   margin: 0 20px;
   cursor: pointer;
 }
 
-#projectsViewer {
+#projects-viewer {
   background-color: rgba(0, 0, 0, 0);
   min-height: 95%;
   width: 100%;
   color: yellow;
 }
 
-.projectsListDescription {
+.projects-list-description {
   margin: 20px;
 }
 
@@ -150,7 +150,7 @@ button {
   margin: 50px 0 20px;
 }
 
-#mainMenuButton {
+#main-menu-button {
   margin: 20px;
 }
 

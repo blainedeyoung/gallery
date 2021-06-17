@@ -1,25 +1,25 @@
 //buttons
-const mainMenuB = document.getElementById("mainMenuButton");
-const aboutB = document.getElementById("aboutButton");
-const projectsB = document.getElementById("projectsButton");
-const linksB = document.getElementById("linksButton");
-const projectsListButton = document.getElementById("projectsListButton");
-const bootstrapSitesButton = document.getElementById("bootstrapSitesButton");
-const reactAppButton = document.getElementById("reactAppButton");
+const mainMenuB = document.getElementById("main-menu-button");
+const aboutB = document.getElementById("about-button");
+const projectsB = document.getElementById("projects-button");
+const linksB = document.getElementById("links-button");
+const projectsListButton = document.getElementById("project-list-button");
+const bootstrapSitesButton = document.getElementById("bootstrap-sites-button");
+const reactAppButton = document.getElementById("react-app-button");
 
 //panels
 const topbar = document.getElementById("topbar");
 const viewer = document.getElementById("viewer");
-const mainMenu = document.getElementById("mainMenu");
+const mainMenu = document.getElementById("main-menu");
 const about = document.getElementById("about");
-const projects = document.getElementById("projectsPanel");
+const projects = document.getElementById("projects-panel");
 const links = document.getElementById("links");
 
 //project panels
 const container = document.querySelector(".container");
-const projectsList = document.getElementById("projectsList");
-const bootstrapSitesList = document.getElementById("bootstrapSitesList");
-const reactAppList = document.getElementById("reactAppList");
+const projectsList = document.getElementById("projects-list");
+const bootstrapSitesList = document.getElementById("bootstrap-sites-list");
+const reactAppList = document.getElementById("react-app-list");
 
 //return to main menu
 function returnToMainMenu() {
@@ -58,7 +58,7 @@ linksB.onclick = () => {
     mainMenuB.classList.replace("d-none", "d-block");
 };
 
-//display bootstrap sites list on projectsViewer
+//display bootstrap sites list on projects-viewer
 projectsListButton.onclick = () => {
   projectsList.classList.replace("d-none", "d-flex");
   bootstrapSitesList.classList.replace("d-flex", "d-none");
@@ -68,7 +68,7 @@ projectsListButton.onclick = () => {
   reactAppButton.classList.remove("shadowed");
 }
 
-//display bootstrap sites list on projectsViewer
+//display bootstrap sites list on projects-viewer
 bootstrapSitesButton.onclick = () => {
   projectsList.classList.replace("d-flex", "d-none");
   bootstrapSitesList.classList.replace("d-none", "d-flex");
@@ -78,7 +78,7 @@ bootstrapSitesButton.onclick = () => {
   reactAppButton.classList.remove("shadowed");
 }
 
-//display react app list on projectsViewer
+//display react app list on projects-viewer
 reactAppButton.onclick = () => {
   projectsList.classList.replace("d-flex", "d-none");
   bootstrapSitesList.classList.replace("d-flex", "d-none");

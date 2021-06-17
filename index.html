@@ -18,20 +18,20 @@
      </div>
      <!-- this is the area where information will be displayed -->
      <div class="justify-content-center" id="viewer">
-       <div class="d-flex panel" id="mainMenu">
-         <button id="aboutButton">About Me</button>
-         <a href="../resume.pdf" target="_blank" id="resumeLink"><button id="resumeButton">Resume</button></a>
-         <button id="projectsButton">Projects</button>
-         <button id="linksButton">Links</button>
+       <div class="d-flex panel" id="main-menu">
+         <button id="about-button">About Me</button>
+         <a href="../resume.pdf" target="_blank" id="resume-link"><button id="resume-button">Resume</button></a>
+         <button id="projects-button">Projects</button>
+         <button id="links-button">Links</button>
        </div>
        <div class="d-none panel" id="about">
-         <p class="aboutBlock">
+         <p class="about-block">
            My problem with establishing a career has always been I wasn't sure exactly
            what I wanted to do. I've considered and made strong motions toward becoming
            a biologist, a chemist, and a mathematician, with some shorter spasms toward
            philosophy, law, literary scholarship, and business.
          </p>
-         <p class="aboutBlock">
+         <p class="about-block">
            I was in college forever because it turns out that taking two classes from every
            college in a university doesn't add up to a degree. When I was finally informed that
            if I didn't graduate that year they were going to cut off my funding, I did an audit
@@ -41,7 +41,7 @@
            And that's how I came to have that Bachelor's Degree.
            I was only one class short of a minor in chemistry, and I think three classes short of a minor in math.
          </p>
-         <p class="aboutBlock">
+         <p class="about-block">
            After I got an English degree because of its expedience,
            I briefly considered a career in literary scholarship. I have this theory about Milton's
            Paradise Lost that is the kind of thing that becomes a basis for such a career, but I
@@ -49,7 +49,7 @@
            I stayed in college and got a Master's in Computer Science which has been a consistent
            interest of mine since childhood.
          </p>
-         <p class="aboutBlock">
+         <p class="about-block">
            Looking at the available concentrations for Master's Computer Science programs, I immediately
            gravitated toward Bioinformatics because biology has been one of the central pre-occupations of my life.
            That means I spent, more or less,
@@ -57,41 +57,41 @@
            way to study bioinformatics, and I had a hard time getting a job. The college really should develop a program
            geared directly toward that specialization or quit saying they have such a program.
          </p>
-         <p class="aboutBlock">
+         <p class="about-block">
            After college my father passed away and left me a small inheritance. A smarter person might have put that
            money into a retirement account, but I decided to take some time off to think about what I was going to do.
            I eventually decided web development was going to be my career path because I like it and there's plenty of
            demand, but I'd barely stratched the surface of that in college. So I went to V School and learned MERN
            stack development.
          </p>
-         <p class="aboutBlock">
+         <p class="about-block">
            Quite to my surprise, the first job offer I got after V School was as a Bioinformatician working for the state.
            So I decided to give that a go, but the lab really didn't need me. The researchers all knew how to do the computer
            stuff they needed for their research, so after a six month contract they didn't offer me a permanent position. That
            was just about the time Covid-19 wrecked the economy. I bet those biologists really wish I was still working with them!
          </p>
-         <p class="aboutBlock">
+         <p class="about-block">
            Now I have the eternal problem of looking for the few years of job experience that virtually every job requires.
            So I'm building this portfolio site to showcase my skills and hopefully get a job.
          </p>
-         <p class="aboutBlock">
+         <p class="about-block">
            I'm bright. I'm capable. I'm mature. And I have enough life experience to know that
            anything I don't know I can learn at speed.
          </p>
-         <p class="aboutBlock">
+         <p class="about-block">
            Thank you for reading this and I hope we can have a mutually beneficial collaboration. Best regards, Blaine.
          </p>
        </div>
-       <div class="d-none panel" id="projectsPanel">
-         <nav id="projectsNavbar">
-           <a class="projectNavLink" onclick="returnToMainMenu()">Main Menu</a>
-           <a class="projectNavLink shadowed" id="projectsListButton">Projects Menu</a>
-           <a class="projectNavLink" id="bootstrapSitesButton">Bootstrap Sites</a>
-           <a class="projectNavLink" id="reactAppButton">React apps</a>
+       <div class="d-none panel" id="projects-panel">
+         <nav id="projects-navbar">
+           <a class="project-nav-link" onclick="returnToMainMenu()">Main Menu</a>
+           <a class="project-nav-link shadowed" id="project-list-button">Projects Menu</a>
+           <a class="project-nav-link" id="bootstrap-sites-button">Bootstrap Sites</a>
+           <a class="project-nav-link" id="react-app-button">React apps</a>
          </nav>
-         <div id="projectsViewer">
-           <ul class="d-flex list" id="projectsList">
-             <p class="projectsListDescription">
+         <div id="projects-viewer">
+           <ul class="d-flex list" id="projects-list">
+             <p class="projects-list-description">
                Clicking on any of the images listed in any of the projects menus will redirect you to that page (except the one representing this page.)
              </p>
              <li>
@@ -121,8 +121,8 @@
                </div>
              </li>
            </ul>
-           <ul class="d-none list" id="bootstrapSitesList">
-             <p class="projectsListDescription">
+           <ul class="d-none list" id="bootstrap-sites-list">
+             <p class="projects-list-description">
                These sites are mock-ups, front-end stubs.  Links won't go anywhere.  Buttons and form elements may or may not do anything.
                I'm making them as an exercise in design and CSS.  They use themed Bootstrap 5.0.1.  Look for a grey aboutPanel at the bottom
                of each site for information about the content and functionality.
@@ -154,7 +154,7 @@
                </div>
              </li>
            </ul>
-           <ul class="d-none list" id="reactAppList">
+           <ul class="d-none list" id="react-app-list">
              <li>
                <h6 class="list-heading">
                  some other site
@@ -185,7 +185,7 @@
            </li>
          </ul>
        </div>
-       <button class="d-none" id="mainMenuButton" onclick="returnToMainMenu()">Main Menu</button>
+       <button class="d-none" id="main-menu-button" onclick="returnToMainMenu()">Main Menu</button>
      </div>
      <div id="credit"> Photo by <target="_blank" a href="https://unsplash.com/@sonika_agarwal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sonika Agarwal</a> on
          <a target="_blank" href="https://unsplash.com/s/photos/water-droplet-ripple?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
