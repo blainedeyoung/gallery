@@ -1,3 +1,5 @@
+//Wow!  Doing this with jQuery would be a lot easier!  
+
 //buttons
 const mainMenuB = document.getElementById("main-menu-button");
 const aboutB = document.getElementById("about-button");

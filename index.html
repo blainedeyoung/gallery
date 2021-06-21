@@ -12,18 +12,22 @@
  </head>
 
  <body>
+   <!-- holds viewer window -->
    <div class="container">
+     <!-- displays name of page currently being viewed -->
      <div id="topbar">
        <p class="greeting">Welcome to Blaine DeYoung's personal webserver! What can I do for you today?</p>
      </div>
      <!-- this is the area where information will be displayed -->
      <div class="justify-content-center" id="viewer">
+       <!-- main menu -->
        <div class="d-flex panel" id="main-menu">
          <button id="about-button">About Me</button>
          <a href="../resume.pdf" target="_blank" id="resume-link"><button id="resume-button">Resume</button></a>
          <button id="projects-button">Projects</button>
          <button id="links-button">Links</button>
        </div>
+       <!-- about panel -->
        <div class="d-none panel" id="about">
          <p class="about-block">
            My problem with establishing a career has always been I wasn't sure exactly
@@ -82,17 +86,21 @@
            Thank you for reading this and I hope we can have a mutually beneficial collaboration. Best regards, Blaine.
          </p>
        </div>
+       <!-- projects panel -->
        <div class="d-none panel" id="projects-panel">
+         <!-- navbar for selecting project categories -->
          <nav id="projects-navbar">
            <a class="project-nav-link" onclick="returnToMainMenu()">Main Menu</a>
            <a class="project-nav-link shadowed" id="project-list-button">Projects Menu</a>
            <a class="project-nav-link" id="bootstrap-sites-button">Bootstrap Sites</a>
            <a class="project-nav-link" id="react-app-button">React apps</a>
          </nav>
+         <!-- smaller viewer nested inside viewer for displaying projects -->
          <div id="projects-viewer">
+           <!-- default screen for projects viewer -->
            <ul class="d-flex list" id="projects-list">
              <p class="projects-list-description">
-               Clicking on any of the images listed in any of the projects menus will redirect you to that page (except the one representing this page.)
+               Clicking on any of the images listed in any of the projects menus will redirect you to that page (except the one representing this page.)  I invite you to visit any of the websites presented here (including this one) on mobile devices or indeed monitors of any size.  In fact, I hope you will.  Coding the responsive behaviors was the hardest part of making the sites.  It would be a shame if no one appreciated them.
              </p>
              <li>
                <h6 class="list-heading">
@@ -121,6 +129,7 @@
                </div>
              </li>
            </ul>
+           <!-- list of bootstrap sites -->
            <ul class="d-none list" id="bootstrap-sites-list">
              <p class="projects-list-description">
                These sites are mock-ups, front-end stubs.  Links won't go anywhere.  Buttons and form elements may or may not do anything.
@@ -148,19 +157,29 @@
                <div class="list-item-body-container">
                  <a href="../bootstrap-sites/function-over-fashion/"><img class="list-image" src="images/functionOverFashion.png" /></a>
                  <p class="list-description">
-                   Continuing the theme of the clothing store that wants to make their customers believe that 3/4 of their stock is unattractive,
-                   we have another website made with mostly the same technology and resources from the same open source sites but has a different layout,
+                   Continuing the theme of the clothing store, we have another website made with mostly the same technology and resources from the same open source sites.  It has a different layout,
                    color scheme, and some different components and so hopefully evokes a different mood.  The code is available on <a href="https://github.com/blainedeyoung/function-over-fashion" target="_blank">Github</a>.</p>
                </div>
              </li>
+             <li>
+               <h6 class="list-heading">
+                 Tomb Planers
+               </h6>
+               <div class="list-item-body-container">
+                 <a href="../bootstrap-sites/function-over-fashion/"><img class="list-image" src="images/tombPlaners.png" /></a>
+                 <p class="list-description">
+                    At Tomb Planers the motto is "It's not just a trip.  It's an adventure!"  It's a travel agency that offers package destination vacation deals.  This site features a javascript app a little more sophisticated than what I've demonstrated so far (but check out my react apps to see some js magic).  The code is available on <a href="https://github.com/blainedeyoung/tomb-planers" target="_blank">Github</a>.</p>
+               </div>
+             </li>
            </ul>
+           <!-- list of react apps -->
            <ul class="d-none list" id="react-app-list">
              <li>
                <h6 class="list-heading">
                  some other site
                </h6>
                <div class="list-item-body-container">
-                 <img class="list-image" src="images/functionOverFashion.png" />
+                 <a href="../bootstrap-sites/tomb-planers/"><img class="list-image" src="images/functionOverFashion.png" /></a>
                  <p class="list-description">
                    Some other site I haven't made yet.
                    The code is available on <a href="https://github.com/blainedeyoung/personal-page" target="_blank">Github</a>.</p>
