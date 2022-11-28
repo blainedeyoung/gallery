@@ -30,60 +30,26 @@
        <!-- about panel -->
        <div class="d-none panel" id="about">
          <p class="about-block">
-           My problem with establishing a career has always been I wasn't sure exactly
-           what I wanted to do. I've considered and made strong motions toward becoming
-           a biologist, a chemist, and a mathematician, with some shorter spasms toward
-           philosophy, law, literary scholarship, and business.
+          I am bright, eager, and quick to learn.  For the last year or so I've been working with a military contractor on a massive multi-language application to facilitate communication and support soldiers' tactical awareness in the field.  I have a Master’s Degree in Applied Computing from Eastern Kentucky University.  
          </p>
          <p class="about-block">
-           I was in college forever because it turns out that taking two classes from every
-           college in a university doesn't add up to a degree. When I was finally informed that
-           if I didn't graduate that year they were going to cut off my funding, I did an audit
-           of my credits and decided that the shortest path to a degree was English Literature.
-           English classes don't have the same linear progression that most majors do.
-           It doesn't really matter if you take Shakespeare before Romance Literature.
-           And that's how I came to have that Bachelor's Degree.
-           I was only one class short of a minor in chemistry, and I think three classes short of a minor in math.
-         </p>
-         <p class="about-block">
-           After I got an English degree because of its expedience,
-           I briefly considered a career in literary scholarship. I have this theory about Milton's
-           Paradise Lost that is the kind of thing that becomes a basis for such a career, but I
-           wasn't really motivated to do that and it didn't seem like a very practical pursuit. So
-           I stayed in college and got a Master's in Computer Science which has been a consistent
-           interest of mine since childhood.
-         </p>
-         <p class="about-block">
-           Looking at the available concentrations for Master's Computer Science programs, I immediately
-           gravitated toward Bioinformatics because biology has been one of the central pre-occupations of my life.
-           That means I spent, more or less,
-           half my time taking computer classes and half taking biology classes. But it turns out that really isn't a very good
-           way to study bioinformatics, and I had a hard time getting a job. The college really should develop a program
-           geared directly toward that specialization or quit saying they have such a program.
-         </p>
-         <p class="about-block">
-           After college my father passed away and left me a small inheritance. A smarter person might have put that
-           money into a retirement account, but I decided to take some time off to think about what I was going to do.
-           I eventually decided web development was going to be my career path because I like it and there's plenty of
-           demand, but I'd barely scratched the surface of that in college. So I went to V School and learned MERN
-           stack development.
-         </p>
-         <p class="about-block">
-           Quite to my surprise, the first job offer I got after V School was as a Bioinformatician working for the state.
-           So I decided to give that a go, but the lab really didn't need me. The researchers all knew how to do the computer
-           stuff they needed for their research, so after a six month contract they didn't offer me a permanent position. That
-           was just about the time Covid-19 wrecked the economy. I bet those biologists really wish I was still working with them!
-         </p>
-         <p class="about-block">
-           About six months ago now, I got a job as a software engineer with sempervalens.  It's a fine job, but I'm now actively looking for another.  There are a few reasons, but the big one is that I moved to Oklahoma for this position.  I knew it was going to be hot, but I never would have guessed.  It's oppressive.  What I would like is to get another position I could work remotely at least until next March when my lease runs out at which point I intend to leave this state.
-         </p>
-         <p class="about-block">
-           I'm bright. I'm capable. I'm mature. And I have enough life experience to know that
-           anything I don't know I can learn at speed.
-         </p>
-         <p class="about-block">
-           Thank you for reading this and I hope we can have a mutually beneficial collaboration. Best regards, Blaine.
-         </p>
+          I’m proficient with C#, Java, and Javascript and have some familiarity with a handful of other programming languages including C++, Python, and PHP.  I'm familiar with working in a Linux environment and can write shell scripts.  I have advanced knowledge of front-end technologies: AngularJS, ReactJS, CSS, SASS, and Bootstrap.  I’m well-versed with cloud computing with AWS, Azure, and heroku.  I’ve used both relational and non-relational databases: SQL and MongoDB.  I’ve set up servers and RESTful APIs using Express and am familiar with consuming such APIs.
+        </p>
+        <p class="about-block">
+          I have a strong background in science, math, statistics, and if we ever play Trivial Pursuit you’ll probably want me on your team.  Moreover, I have enough experience to be confident that anything I don’t know I’ll be able to learn quickly.  I am curious and constantly on the look-out for new and better ways to solve problems.  I believe in building software that not only works but does so efficiently and provides the end-user with all the functionality that he needs with a minimum of effort on his part.
+        </p>
+        <p class="about-block">
+          I'd prefer to make next position 100% remote, so I can stay in my apartment until the lease expires in March.  But I am willing to relocate now for the right opportunity.  
+        </p>
+        <p class="about-block">
+          For more information about me, please see the links page which you can find through the main menu of this site.  
+        </p>
+        <p class="about-block">
+          I’m certain that with my skills and experience I can be a great benefit to you in your work.  I’m available to start immediately.  Please call or email to schedule an interview.  
+        </p>
+        <p class="about-block">
+          Best regards.
+        </p>
        </div>
        <!-- projects panel -->
        <div class="d-none panel" id="projects-panel">
@@ -92,7 +58,7 @@
            <a class="project-nav-link" onclick="returnToMainMenu()">Main Menu</a>
            <a class="project-nav-link shadowed" id="project-list-button">Projects Menu</a>
            <a class="project-nav-link" id="bootstrap-sites-button">Bootstrap Sites</a>
-           <a class="project-nav-link" id="react-app-button">MERN stack apps</a>
+           <!--<a class="project-nav-link" id="react-app-button">MERN stack apps</a> -->
          </nav>
          <!-- smaller viewer nested inside viewer for displaying projects -->
          <div id="projects-viewer">
@@ -172,11 +138,13 @@
              </li>
            </ul>
            <!-- list of react apps -->
+           <!--
            <ul class="d-none list" id="react-app-list">
               <p class="projects-list-description">
                 These are MERN stack apps.  React front-ends, node/express controllers, and MongoDB models using mongoose.  Hosting them properly on this server would require setting up a load balancer which would cost money, so for the time being I have them deployed on heroku.  All their code is available on github.  Their databases are hosted by MongoDB Atlas.<br>  
                 <br>
-                These are old apps I made in Vschool (before I learned bootstrap and SASS).  They don't Redux but use High Order Components as Context providers.  It's not very efficient.  I'm providing a lot of components with information they don't need.  Their functionality is fairly elementary on top of which they're ugly.<br>  
+                These are old apps I made in Vschool (before I learned bootstrap and SASS).  They don't use Redux but use High Order Components as Context providers.  
+                It's not very efficient.  I'm providing a lot of components with information they don't need.  Their functionality is fairly elementary on top of which they're ugly.<br>  
                 <br>
                 There are a thousand things I could do to make these apps better, but I'd rather make some new apps.  Of course that will take time.  I include them so you can see I know the basics of making MERN stack apps with CRUD functionality.  You can log into them with username blainedeyoung and password 424242 to see the demo I've set up or register or own user or both.
               </p>
@@ -200,7 +168,7 @@
                     Job Application Tracker is meant as a helpful notepad to keep track of job leads.  You can record information about each lead including when you get a call back or schedule an interview.  The app will move the lead to a different column as you move through the stages of application to callback to interview to offer.  The code is available on <a href="https://github.com/blainedeyoung/job-application-tracker-blaine-deyoung" target="_blank">Github</a>.</p>
                 </div>
               </li>
-             <!-- <li>
+             <li>
                <h6 class="list-heading">
                 Blaine's Computer Hardware Store
                </h6>
