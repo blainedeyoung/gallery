@@ -1,5 +1,4 @@
 @import 'mixins';
-@import 'breakpoints';
 
 body, p, ul, li {
   margin: 0;
@@ -60,7 +59,7 @@ button {
   color: gold;
   & .greeting {
     padding: 0 10% !important;
-    letter-spacing: 2px;
+    letter-spacing: 1.25px;
   }
 }
 

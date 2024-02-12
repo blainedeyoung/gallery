@@ -4,8 +4,6 @@ const aboutB = document.getElementById("about-button");
 const projectsB = document.getElementById("projects-button");
 const linksB = document.getElementById("links-button");
 const projectsListButton = document.getElementById("project-list-button");
-const bootstrapSitesButton = document.getElementById("bootstrap-sites-button");
-// const reactAppButton = document.getElementById("react-app-button");
 
 //panels
 const topbar = document.getElementById("topbar");
@@ -18,8 +16,6 @@ const links = document.getElementById("links");
 //project panels
 const container = document.querySelector(".container");
 const projectsList = document.getElementById("projects-list");
-const bootstrapSitesList = document.getElementById("bootstrap-sites-list");
-// const reactAppList = document.getElementById("react-app-list");
 
 //return to main menu
 function returnToMainMenu() {
@@ -57,33 +53,3 @@ linksB.onclick = () => {
     links.classList.replace("d-none", "d-flex");
     mainMenuB.classList.replace("d-none", "d-block");
 };
-
-//display bootstrap sites list on projects-viewer
-projectsListButton.onclick = () => {
-  projectsList.classList.replace("d-none", "d-flex");
-  bootstrapSitesList.classList.replace("d-flex", "d-none");
-  // reactAppList.classList.replace("d-flex", "d-none");
-  projectsListButton.classList.add("shadowed");
-  bootstrapSitesButton.classList.remove("shadowed");
-  // reactAppButton.classList.remove("shadowed");
-}
-
-//display bootstrap sites list on projects-viewer
-bootstrapSitesButton.onclick = () => {
-  projectsList.classList.replace("d-flex", "d-none");
-  bootstrapSitesList.classList.replace("d-none", "d-flex");
-  // reactAppList.classList.replace("d-flex", "d-none");
-  projectsListButton.classList.remove("shadowed");
-  bootstrapSitesButton.classList.add("shadowed");
-  // reactAppButton.classList.remove("shadowed");
-}
-
-//display react app list on projects-viewer
-// reactAppButton.onclick = () => {
-//   projectsList.classList.replace("d-flex", "d-none");
-//   bootstrapSitesList.classList.replace("d-flex", "d-none");
-//   reactAppList.classList.replace("d-none", "d-flex");
-//   projectsListButton.classList.remove("shadowed");
-//   bootstrapSitesButton.classList.remove("shadowed");
-//   reactAppButton.classList.add("shadowed");
-// }
